@@ -4,7 +4,7 @@ pipeline {
   }
   
   stages {
-    stage("Build") {
+    stage("Build and Run") {
       steps {
         script {
           docker.build('node-webapp').run('-p 3000:3000') 
@@ -12,4 +12,4 @@ pipeline {
       }
     }
   }
-{
+}
